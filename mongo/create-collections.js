@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 MongoClient.connect(url, function(err, client) {
     if (err){
         throw err;
-    } 
+    }
     else{
         console.log("Connected to MongoDB!");
         var db=client.db('mydb');
